@@ -54,6 +54,8 @@ public class Login {
                         public void handle(ActionEvent t) {
                                 boolean emailValid = true;
                                 boolean passValid = true;
+                                email_txt.setText("aaa@aaa.com");
+                                pass_txt.setText("123456aA&");
                                 if(!email_txt.getText().isEmpty() && !pass_txt.getText().isEmpty())
                                 {
                                         if(!Pattern.matches("^[a-z0-9]+(_{1}|.{1})+[a-z0-9]{1,}@{1}[a-z]{2,}[.][a-z]{2,5}$", email_txt.getText()))
@@ -92,7 +94,8 @@ public class Login {
                                                         Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
                                                 }
                                                 try {
-                                                        con = DriverManager.getConnection("jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7320143", "sql7320143", "LS4CgdqGST");
+                                                        //con = DriverManager.getConnection("jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7320143", "sql7320143", "LS4CgdqGST");
+                                                        con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/javaproject", "root", "root");
                                                 } catch (SQLException ex) {
                                                         Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
                                                 }

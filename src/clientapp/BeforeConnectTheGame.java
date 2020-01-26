@@ -34,7 +34,8 @@ public class BeforeConnectTheGame {
                      //   public void run() {
                                 try {
 
-                                        client = new Socket("192.168.1.7",5000);
+                                        //client = new Socket("192.168.1.7",5000);
+                                        client = new Socket("127.0.0.1",5000);
 
                                 //SocketChannel socketChannel = client.getChannel();
                                 } catch (IOException ex) {
