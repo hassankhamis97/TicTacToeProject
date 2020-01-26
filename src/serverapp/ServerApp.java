@@ -6,6 +6,7 @@
 package serverapp;
 
 import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.net.ServerSocket;
@@ -31,8 +32,9 @@ public class ServerApp {
          * @param args the command line arguments
          */
         ServerSocket server;
-        DataInputStream dis;
-        PrintStream ps;
+        //DataInputStream dis;
+        //DataOutputStream dos;
+        //PrintStream ps;
         Socket virtualSocket;
         List<GamePlayers> gpList = new ArrayList<GamePlayers>();
         GamePlayers gp;
